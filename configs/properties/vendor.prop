@@ -250,6 +250,9 @@ ro.vendor.whitepoint_calibration_enable=true
 ro.vendor.xiaomi.bl.poll=true
 sys.displayfeature_hidl=true
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Enable Incremental
 ro.incremental.enable=true
 
