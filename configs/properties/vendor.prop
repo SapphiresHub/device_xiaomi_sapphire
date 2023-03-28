@@ -225,6 +225,7 @@ vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_posted_start_dyn=1
 vendor.display.idle_time=0
+ro.hwui.render_ahead=20
 vendor.display.normal_noc_efficiency_factor=0.85
 vendor.display.secure_preview_buffer_format=420_sp
 vendor.display.use_smooth_motion=1
