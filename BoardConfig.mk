@@ -68,6 +68,9 @@ TARGET_BOOTLOADER_BOARD_NAME := bengal
 # Camera
 $(call soong_config_set, camera, override_format_from_reserved, true)
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Display
 SOONG_CONFIG_NAMESPACES += qcomDisplayVars
 SOONG_CONFIG_qcomDisplayVars += target_panel_dimension_multiplier
