@@ -376,6 +376,21 @@ $(call soong_config_set, lineage_health, charging_control_charging_enabled, 0)
 $(call soong_config_set, lineage_health, charging_control_charging_disabled, 1)
 $(call soong_config_set, lineage_health, charging_control_supports_bypass, false)
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    MiClstc \
+    MiStcImpl \
+    SDM \
+    SRE \
+    android.hardware.power-service-qti \
+    sensors \
+    vendor.qti.hardware.display.composer-service
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
+endif
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
