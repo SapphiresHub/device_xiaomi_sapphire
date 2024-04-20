@@ -118,6 +118,9 @@ dalvik.vm.enable_pr_dexopt=true
 dalvik.vm.isolatedprocesses=true
 dalvik.vm.lockssuppression=true
 
+# Silence minksocket logs
+persist.log.tag.minksocket=S
+
 # Ram Management
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
