@@ -72,6 +72,9 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.min.fling_velocity=70
 ro.max.fling_velocity=21000
 
+# Graphics
+debug.sf.disable_backpressure=1
+
 # NFC
 ro.nfc.port=I2C
 
