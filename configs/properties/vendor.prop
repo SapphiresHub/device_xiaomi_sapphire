@@ -182,7 +182,6 @@ drm.service.enabled=true
 
 # Display
 debug.mdpcomp.logs=0
-debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
 debug.sf.enable_hwc_vds=0
 ro.surface_flinger.refresh_rate_switching=true
@@ -216,12 +215,14 @@ vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_idle_time_video=1
 vendor.display.disable_layer_stitch=0
+vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_rotator_ubwc=1
 vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=0
 vendor.display.enable_allow_idle_fallback=1
 vendor.display.enable_async_powermode=1
 vendor.display.enable_camera_smooth=1
+debug.sf.set_idle_timer_ms=3000
 vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.display.enable_posted_start_dyn=1
