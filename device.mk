@@ -683,3 +683,6 @@ PRODUCT_PACKAGES += \
 	
 # LiteGApps
 -include vendor/gapps/arm64/arm64-vendor.mk
+
+# Viper4AndroidFX
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
