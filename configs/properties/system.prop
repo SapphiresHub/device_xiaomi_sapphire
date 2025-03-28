@@ -23,15 +23,8 @@ persist.vendor.ims.disableQXDMLogs=1
 # Fwk-Detect
 ro.vendor.qti.va_aosp.support=1
 
-# Hint Manager
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
-
 # enable tunnel encoding for amrwb
 tunnel.audio.encode=true
-
-# property to latch unsignaled buffer
-debug.sf.latch_unsignaled=1
 
 # HWUI
 ro.hwui.texture_cache_size=72
@@ -51,10 +44,6 @@ config.disable_rtt=true
 
 # LMKD
 ro.config.low_ram=false
-ro.lmk.use_minfree_levels=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.swap_util_max=90
-ro.lmk.debug=false
 ro.lmk.log_stats=false
 
 # Media
@@ -77,6 +66,11 @@ debug.sf.disable_backpressure=1
 
 # NFC
 ro.nfc.port=I2C
+
+# QTI Mem Optimisation
+persist.vendor.sys.memplus.enable=false
+ro.vendor.qti.sys.fw.bg_apps_limit=30
+ro.vendor.qti.sys.fw.bservice_limit=60
 
 # NTP
 persist.backup.ntpServer="0.pool.ntp.org"
@@ -110,20 +104,6 @@ ro.hardware.wlan.dbs=0
 ro.hardware.wlan.mimo=0
 ro.hardware.wlan.vendor=qcom
 ro.hardware.wlan.chip=wcn3988
-
-# Dalvik
-ro.dalvik.vm.native.bridge=0
-dalvik.vm.dex2oat-resolve-startup-strings=true
-dalvik.vm.usap_pool_enabled=true
-dalvik.vm.madvise.artfile.size=4294967295
-dalvik.vm.usap_refill_threshold=1
-dalvik.vm.usap_pool_size_max=4
-dalvik.vm.usap_pool_size_min=1
-dalvik.vm.usap_pool_refill_delay_ms=1000
-dalvik.vm.useartservice=true
-dalvik.vm.enable_pr_dexopt=true
-dalvik.vm.isolatedprocesses=true
-dalvik.vm.lockssuppression=true
 
 # Silence minksocket logs
 persist.log.tag.minksocket=S
