@@ -680,3 +680,6 @@ PRODUCT_PACKAGES += \
     firmware_WCNSS_qcom_cfg.ini_symlink \
     firmware_wlanmdsp.mbn_symlink
     
+	
+# LiteGApps
+-include vendor/gapps/arm64/arm64-vendor.mk
